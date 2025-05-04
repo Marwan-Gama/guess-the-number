@@ -1,0 +1,148 @@
+.game-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.message {
+  font-size: 1.3rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  min-height: 2rem;
+  font-weight: 500;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  transition: var(--transition);
+  border: 1px solid rgba(108, 92, 231, 0.1);
+}
+
+.attempts {
+  font-size: 1.2rem;
+  color: var(--light-text);
+  margin-bottom: 2rem;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0.8rem 1.5rem;
+  border-radius: 16px;
+  display: inline-block;
+  border: 1px solid rgba(108, 92, 231, 0.1);
+}
+
+.guess-form {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.guess-input {
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  border: 2px solid rgba(108, 92, 231, 0.2);
+  border-radius: 16px;
+  width: 200px;
+  text-align: center;
+  transition: var(--transition);
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--text-color);
+}
+
+.guess-input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.2);
+  transform: translateY(-2px);
+}
+
+.guess-input::placeholder {
+  color: var(--light-text);
+  opacity: 0.6;
+}
+
+.guess-button,
+.restart-button {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  color: var(--white);
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: var(--transition);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+}
+
+.guess-button {
+  background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  box-shadow: 0 4px 15px rgba(108, 92, 231, 0.3);
+}
+
+.guess-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(108, 92, 231, 0.4);
+}
+
+.restart-button {
+  background: linear-gradient(45deg, var(--accent-color), var(--success));
+  box-shadow: 0 4px 15px rgba(0, 206, 201, 0.3);
+}
+
+.restart-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 206, 201, 0.4);
+}
+
+@media (max-width: 480px) {
+  .game-container {
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .guess-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .guess-input {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .guess-button,
+  .restart-button {
+    width: 100%;
+    max-width: 250px;
+  }
+}
