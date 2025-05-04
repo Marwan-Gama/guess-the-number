@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="240" fill="#4CAF50" />
+  
+  <!-- Question mark -->
+  <path d="M256 128C220.7 128 192 156.7 192 192C192 204.8 199.2 212 212 212C224.8 212 232 204.8 232 192C232 178.8 242.8 168 256 168C269.2 168 280 178.8 280 192C280 204.8 292.8 212 305.6 212C318.4 212 325.6 204.8 325.6 192C325.6 156.7 296.9 128 261.6 128H256Z" fill="white"/>
+  <path d="M256 320C242.8 320 232 330.8 232 344C232 357.2 242.8 368 256 368C269.2 368 280 357.2 280 344C280 330.8 269.2 320 256 320Z" fill="white"/>
+  
+  <!-- Numbers around the circle -->
+  <text x="256" y="100" text-anchor="middle" fill="white" font-family="Arial" font-size="24">?</text>
+  <text x="412" y="256" text-anchor="middle" fill="white" font-family="Arial" font-size="24">?</text>
+  <text x="256" y="412" text-anchor="middle" fill="white" font-family="Arial" font-size="24">?</text>
+  <text x="100" y="256" text-anchor="middle" fill="white" font-family="Arial" font-size="24">?</text>
+</svg> 
